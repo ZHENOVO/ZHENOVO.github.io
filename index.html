@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html 
+	lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> Z.xyz</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+		<link
+			rel="shortcut icon"
+			href="/img/favicon.ico"
+			type="image/x-icon"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+			
+				
+<link rel="stylesheet" href="/css/custom.css">
+
+			
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 8.1.2"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('/img/bg.png')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="Z.xyz">
+        <img
+			src="/img/avatar.jpg"
+			alt="ZHENOVO"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a href="/img/avatar.jpg" title="ZHENOVO">
+			<img
+				src="/img/avatar.jpg"
+				alt="ZHENOVO"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>1</div>
+		<div><span>标签</span>2</div>
+		<div><span>分类</span>1</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple true"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archives/"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/about.html"
+			title="关于本人"
+		>
+			<i
+				class="kirafont
+					
+						icon-user
+					"
+			></i>
+			<div class="kira-list-item-content">
+				关于本人
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/friends.html"
+			title="我的朋友"
+		>
+			<i
+				class="kirafont
+					
+						icon-team
+					"
+			></i>
+			<div class="kira-list-item-content">
+				我的朋友
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			
+<div class="kira-widget-wrap kira-nav-widget">
+	<h3 class="kira-widget-title">导航</h3>
+	<div class="kira-widget">
+		<div class="kira-nav-links">
+			
+			<a
+				class="kira-nav-link mdui-ripple"
+				href="https://github.com/ZHENOVO"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="GitHub"
+			>
+				<i class="kirafont icon-github"></i>
+				<span>GitHub</span>
+			</a>
+			
+			<a
+				class="kira-nav-link mdui-ripple"
+				href="https://juejin.cn/"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="掘金"
+			>
+				<i class="kirafont icon-link"></i>
+				<span>掘金</span>
+			</a>
+			
+			<a
+				class="kira-nav-link mdui-ripple"
+				href="https://developer.mozilla.org/zh-CN/"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="MDN"
+			>
+				<i class="kirafont icon-link"></i>
+				<span>MDN</span>
+			</a>
+			
+			<a
+				class="kira-nav-link mdui-ripple"
+				href="https://www.bilibili.com/"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="Bilibili"
+			>
+				<i class="kirafont icon-bilibili"></i>
+				<span>Bilibili</span>
+			</a>
+			
+			<a
+				class="kira-nav-link mdui-ripple"
+				href="https://www.zhihu.com/"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="知乎"
+			>
+				<i class="kirafont icon-link"></i>
+				<span>知乎</span>
+			</a>
+			
+			<a
+				class="kira-nav-link mdui-ripple"
+				href="https://www.cnblogs.com/"
+				target="_blank"
+				rel="noopener noreferrer"
+				title="博客园"
+			>
+				<i class="kirafont icon-link"></i>
+				<span>博客园</span>
+			</a>
+			
+		</div>
+	</div>
+</div>
+
+
+		
+			<div class="kira-widget-wrap">
+	<div class="kira-widget kira-social">
+		
+			<a
+				class="mdui-ripple"
+				href="https://github.com/ZHENOVO"
+				target="_blank"
+				mdui-tooltip="{content: 'GitHub'}"
+				style="color: rgb(25, 23, 23); background-color: rgba(25, 23, 23, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-github
+					"
+				></i>
+			</a>
+		
+	</div>
+</div>
+
+		
+			
+  <div class="kira-widget-wrap">
+    <h3 class="kira-widget-title">分类</h3>
+    <div class="kira-widget">
+      <ul class="category-list">
+        
+        
+
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/杂谈/">
+              杂谈
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Kira/" style="font-size: 10px;">Kira</a>
+		</div>
+		
+	</div>
+
+
+		
+			
+	<div class="kira-widget-wrap">
+		<h3 class="kira-widget-title">
+			文章归档
+		</h3>
+		<div class="kira-widget">
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">1</span></li></ul>
+		</div>
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2026
+		<a href="/">ZHENOVO</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<div class="kira-home-hero">
+	<div class="kira-home-hero-main">
+		<div class="kira-home-hero-eyebrow">
+			<i class="kirafont icon-home"></i>
+			<span>欢迎来到</span>
+		</div>
+		<h2 class="kira-home-hero-title">这里是 Z.xyz</h2>
+		
+		<p class="kira-home-hero-sub">记录技术折腾与日常随笔的地方</p>
+		
+	</div>
+	
+	<div class="kira-home-hero-actions">
+		
+		<a
+			class="kira-home-hero-btn mdui-ripple"
+			href="/about.html"
+			
+		>
+			<i class="kirafont icon-user"></i>
+			<span>关于本人</span>
+		</a>
+		
+		<a
+			class="kira-home-hero-btn mdui-ripple"
+			href="/archives/"
+			
+		>
+			<i class="kirafont icon-container"></i>
+			<span>文章归档</span>
+		</a>
+		
+		<a
+			class="kira-home-hero-btn mdui-ripple"
+			href="https://github.com/ZHENOVO"
+			
+			target="_blank"
+			rel="noopener noreferrer"
+			
+		>
+			<i class="kirafont icon-github"></i>
+			<span>GitHub</span>
+		</a>
+		
+	</div>
+	
+</div>
+
+<div class="kira-home-section-title">
+	<span>最新文章</span>
+</div>
+<div class="kira-posts">
+    
+        <div class="kira-post">
+            <a href="/2026/11/08/hello-world/">
+                
+                <div
+                    class="kira-post-cover mdui-ripple"
+                    style="padding-bottom: 56.25%"
+                >
+                    <img
+                        data-src="/img/bg.png"
+                        data-sizes="auto"
+                        alt="Hello World"
+                        class="lazyload"
+                    />
+                    <h1>Hello World</h1>
+                </div>
+                
+            </a>
+
+            <div class="kira-post-meta kira-rainbow">
+                <a>
+                    <i class="kirafont icon-calendar-fill"></i>
+                    2026年11月08日
+                </a>
+                <a>
+                    <i class="kirafont icon-edit-fill"></i>
+                    73 字
+                </a>
+                <a>
+                    <i class="kirafont icon-time-circle-fill"></i>大概
+                    1 分钟
+                </a>
+            </div>
+    
+            
+        </div>
+        <div class="kira-hr"></div>
+    
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>
