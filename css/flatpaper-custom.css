@@ -1,0 +1,20 @@
+/* 圆润手写风字体（自托管，避免 Google Fonts 加载慢） */
+@font-face {
+	font-family: 'Baloo 2';
+	font-style: normal;
+	font-weight: 400 800;
+	font-display: swap;
+	src: url('/fonts/baloo2-600.woff2') format('woff2');
+}
+
+/* 首页开屏大标题用圆润字体，中文自动回退到正文字体 */
+.home-hero h1 {
+	font-family: 'Baloo 2', var(--font-sans);
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+/* 文字贴纸统一使用圆润字体 */
+.hero-sticker--text span {
+	font-family: 'Baloo 2', var(--font-sans);
+}
